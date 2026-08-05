@@ -13,7 +13,7 @@ import os
 
 # ============ 頁面設定 ============
 st.set_page_config(
-    page_title="巡夢事件預測系統簡易版,
+    page_title="巡夢事件預測系統簡易版",
     page_icon="🔮",
     layout="wide",
     initial_sidebar_state="expanded"
