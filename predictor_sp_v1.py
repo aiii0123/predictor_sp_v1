@@ -7,7 +7,6 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 from datetime import datetime
-import plotly.graph_objects as go
 from collections import defaultdict, Counter
 import re
 import os
@@ -30,15 +29,6 @@ COLOR_HEX = {
     '金': '#d4a017',
     '灰': '#95a5a6',
     '中斷': '#555555'
-}
-
-# ============ 無子類型（簡化版） ============
-SUBTYPES = {
-    '綠': [],
-    '藍': [],
-    '紫': [],
-    '金': [],
-    '灰': []
 }
 
 
@@ -1052,6 +1042,10 @@ def main():
             - 將此網頁加入主畫面，就像 APP 一樣
             - 所有事件點擊即記錄，不需要選子類型
             """)
+    
+    if account_id and len(colors_only) >= 3:
+        # 每當新記錄時自動重新整理
+        st.rerun()
 
 
 if __name__ == "__main__":
