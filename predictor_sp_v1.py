@@ -1043,9 +1043,7 @@ def main():
             - 所有事件點擊即記錄，不需要選子類型
             """)
     
-    if account_id and len(colors_only) >= 3:
-        # 每當新記錄時自動重新整理
-        st.rerun()
+   
 
 
 if __name__ == "__main__":
