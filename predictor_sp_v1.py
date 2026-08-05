@@ -781,7 +781,7 @@ def apply_custom_css():
 def main():
     apply_custom_css()
     
-    st.markdown('<div class="main-header">🔮 巡夢事件預測系統</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">🔮 巡夢事件預測系統簡易版</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">📱 手機優化 · 點擊即記錄 · 自動學習</div>', unsafe_allow_html=True)
     
     # 初始化 Session State
